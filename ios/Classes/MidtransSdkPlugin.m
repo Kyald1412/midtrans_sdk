@@ -33,8 +33,9 @@ FlutterMethodChannel *channel;
 
 - (void)initWithCall:(FlutterMethodCall *)call result:(FlutterResult)result {
     NSString *clientKey = call.arguments[@"clientKey"];
-    BOOL *isDebug = call.arguments[@"isDebug"];
     NSString *merchantServerURL = call.arguments[@"merchantBaseUrl"];
+    NSNumber *valueNumber = call.arguments[@"isDebug"];
+    BOOL isDebug = [valueNumber boolValue];
 
     MidtransServerEnvironment environment = MidtransServerEnvironmentProduction;
 

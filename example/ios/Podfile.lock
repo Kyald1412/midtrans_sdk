@@ -1,14 +1,14 @@
 PODS:
   - Flutter (1.0.0)
-  - midtrans_sdk (0.1.1):
+  - midtrans_sdk (0.4.0):
     - Flutter
-    - MidtransKit (= 1.18.2)
-  - MidtransCoreKit (1.18.2)
-  - MidtransKit (1.18.2):
-    - MidtransCoreKit (= 1.18.2)
-    - MidtransKit/UI (= 1.18.2)
-  - MidtransKit/UI (1.18.2):
-    - MidtransCoreKit (= 1.18.2)
+    - MidtransKit (= 1.26.0)
+  - MidtransCoreKit (1.26.0)
+  - MidtransKit (1.26.0):
+    - MidtransCoreKit (= 1.26.0)
+    - MidtransKit/UI (= 1.26.0)
+  - MidtransKit/UI (1.26.0):
+    - MidtransCoreKit (= 1.26.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/midtrans_sdk/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  midtrans_sdk: 2e2a6c48ca5aca1619c0072c1d882069a2d091f8
-  MidtransCoreKit: c6bd732b831ffa4a27483f78dff395b80cc267fc
-  MidtransKit: 2b40095dabc39acfadedef82401158f175db12d0
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  midtrans_sdk: 1de00f867612b972fee81d4a16a63fa41b9b4521
+  MidtransCoreKit: 51213b5ab76c0443ea9ce9d123feef195935c8a8
+  MidtransKit: 784a612e4f70af90796e7c866ab86bc81bfbf3aa
 
-PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+PODFILE CHECKSUM: 1a782344d33c12ced0182eeab11e8668d253eb48
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2
