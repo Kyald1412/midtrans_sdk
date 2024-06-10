@@ -10,12 +10,14 @@ class MidtransConfig {
   final String language;
   final ColorTheme? colorTheme;
   final bool enableLog;
+  final bool isDebug;
 
   MidtransConfig({
     required this.clientKey,
     required this.merchantBaseUrl,
     this.language = 'id',
     this.colorTheme,
+    this.isDebug = true,
     this.enableLog = true,
   });
 

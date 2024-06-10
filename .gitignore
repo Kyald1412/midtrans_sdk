@@ -1,6 +1,8 @@
 .DS_Store
 .dart_tool/
-
+.idea/*
+.idea/libraries/Dart_SDK.xml
+.idea/workspace.xml
 .packages
 .pub/
 

@@ -26,6 +26,7 @@ class _MyAppState extends State<MyApp> {
   void initSDK() async {
     _midtrans = await MidtransSDK.init(
       config: MidtransConfig(
+        isDebug: true,
         clientKey: DotEnv.env['MIDTRANS_CLIENT_KEY'] ?? "",
         merchantBaseUrl: DotEnv.env['MIDTRANS_MERCHANT_BASE_URL'] ?? "",
         colorTheme: ColorTheme(
