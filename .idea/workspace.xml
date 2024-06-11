@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47b0c4a0-e931-443f-b4d5-c7af1574fe05" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/MidtransSdkPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MidtransSdkPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/models/transaction_result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/models/transaction_result.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -9,6 +9,7 @@ class TransactionResult {
   final String? statusMessage;
   final String? transactionId;
   final String? orderId;
+  final String? grossAmount;
   final String? paymentType;
 
   TransactionResult({
@@ -17,6 +18,7 @@ class TransactionResult {
     this.statusMessage,
     this.transactionId,
     this.orderId,
+    this.grossAmount,
     this.paymentType,
   });
 

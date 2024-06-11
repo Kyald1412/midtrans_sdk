@@ -14,6 +14,7 @@ TransactionResult _$TransactionResultFromJson(Map<String, dynamic> json) =>
       statusMessage: json['statusMessage'] as String?,
       transactionId: json['transactionId'] as String?,
       orderId: json['orderId'] as String?,
+      grossAmount: json['grossAmount'] as String?,
       paymentType: json['paymentType'] as String?,
     );
 
@@ -25,6 +26,7 @@ Map<String, dynamic> _$TransactionResultToJson(TransactionResult instance) =>
       'statusMessage': instance.statusMessage,
       'transactionId': instance.transactionId,
       'orderId': instance.orderId,
+      'grossAmount': instance.grossAmount,
       'paymentType': instance.paymentType,
     };
 
