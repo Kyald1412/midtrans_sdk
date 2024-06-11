@@ -61,6 +61,8 @@ class _MyAppState extends State<MyApp> {
           child: ElevatedButton(
             child: Text("Pay Now"),
             onPressed: () async {
+
+              print("SNAP TOKEN ${DotEnv.env['SNAP_TOKEN']}");
               _midtrans?.startPaymentUiFlow(
                 token: DotEnv.env['SNAP_TOKEN'],
               );

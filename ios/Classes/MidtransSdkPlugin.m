@@ -43,6 +43,8 @@ FlutterMethodChannel *channel;
         environment = MidtransServerEnvironmentSandbox;
     }
 
+//    NSLog(@"paymentFailed: %@", environment);
+
     [CONFIG setClientKey:clientKey
              environment:environment
        merchantServerURL:merchantServerURL];
@@ -51,6 +53,9 @@ FlutterMethodChannel *channel;
 
 - (void)startPaymentUiFlowWithCall:(FlutterMethodCall *)call result:(FlutterResult)result {
     NSString *token = call.arguments[@"token"];
+
+    NSLog(@"paymentFailed: %@", token);
+
     [[MidtransMerchantClient shared] requestTransacationWithCurrentToken:token completion:^(
             MidtransTransactionTokenResponse *_Nullable regenerateToken, NSError *_Nullable error) {
         MidtransUIPaymentViewController *vc = [[MidtransUIPaymentViewController alloc] initWithToken:regenerateToken];
@@ -87,7 +92,7 @@ FlutterMethodChannel *channel;
 }
 
 - (void)paymentViewController:(MidtransUIPaymentViewController *)viewController paymentFailed:(NSError *)error {
-    NSLog(@"paymentFailed: %@", error);
+    NSLog(@"paymentFailssssed: %@", error);
     [self onTransactionFinished:nil canceled:NO];
 }
 
