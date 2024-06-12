@@ -9,7 +9,7 @@ class TransactionResult {
   final String? statusMessage;
   final String? transactionId;
   final String? orderId;
-  final String? grossAmount;
+  final double? grossAmount;
   final String? paymentType;
 
   TransactionResult({

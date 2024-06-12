@@ -14,7 +14,7 @@ TransactionResult _$TransactionResultFromJson(Map<String, dynamic> json) =>
       statusMessage: json['statusMessage'] as String?,
       transactionId: json['transactionId'] as String?,
       orderId: json['orderId'] as String?,
-      grossAmount: json['grossAmount'] as String?,
+      grossAmount: (json['grossAmount'] as num?)?.toDouble(),
       paymentType: json['paymentType'] as String?,
     );
 
